@@ -20,9 +20,23 @@
     */
 
     //ENTRADA
-
+    let joao = 0;
+    let maria = 0;
+    let nulo = 0;
+    let branco = 0;
+    let votos = 1;
 
     //PROCESSAMENTO
+    while (votos !== 0) {
+        votos = prompt("Quem deseja votar:\nCandidato 1-Joãozinho\nCandidato 2-Mariazinha\n3-Nulo \n4-Branco\n Caso deseje encerrar  a votação, digite 0");
+        if (votos == joao) { joao++ }; 
+        if (votos == maria){ maria++ }; 
+        if (votos == nulo){ nulo++ };
+        if (votos == branco){ branco++ };
+        
+    }
+        votos / joao
+     alert(`O candidato vencedor é ${votos}`)
 
 
     //SAÍDA

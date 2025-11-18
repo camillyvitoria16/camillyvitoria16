@@ -11,35 +11,35 @@
     */
 
     //ENTRADA
-let nome = prompt("Digite um nome").trim();
-let idade = Number(prompt("Informe a sua idade!"));
-let salario = Number(prompt("Informe o seu salário."));
-let sexo = prompt("Informe a sua sexualidade.");
-let estado = prompt("Informe seu estado.").trim().toLowerCase();
+    let nome = prompt("Digite um nome").trim();
+    let idade = Number(prompt("Informe a sua idade!"));
+    let salario = Number(prompt("Informe o seu salário."));
+    let sexo = prompt("Informe a sua sexualidade.");
+    let estado = prompt("Informe seu estado.").trim().toLowerCase();
     //PROCESSAMENTO
-while(nome.length < 3) {
-    alert("O nome deve possuir mais de três caracteres!");
-    nome = prompt("Digite um nome").trim();
-}
-while(idade <= 0 ||idade >= 150 ){
-alert("A idade deve ser entre 0 a 150");
-idade =  Number(prompt("Informe a sua idade!"));
-}
-while(salario < 0){
-alert ("O salário deve ser maior que 0! ");
-salario = Number(prompt("Informe o seu salário."));
+    while (nome.length < 3) {
+        alert("O nome deve possuir mais de três caracteres!");
+        nome = prompt("Digite um nome").trim();
+    }
+    while (idade <= 0 || idade >= 150) {
+        alert("A idade deve ser entre 0 a 150");
+        idade = Number(prompt("Informe a sua idade!"));
+    }
+    while (salario < 0) {
+        alert("O salário deve ser maior que 0! ");
+        salario = Number(prompt("Informe o seu salário."));
 
-}
-while(sexo !== "f" && sexo !== "m"){
-    alert(" Feminino ou masculino. ");
-    sexo = prompt("Informe a sua sexualidade.");
-}
-const lista = ["s","c","v","d"];
-while(!lista.includes(estado)){
-    alert(" Insira a letra do seu estado!");
-    estado = prompt("Informe seu estado.");
-}
-alert("Condição validada");
+    }
+    while (sexo !== "f" && sexo !== "m") {
+        alert(" Feminino ou masculino. ");
+        sexo = prompt("Informe a sua sexualidade.");
+    }
+    const lista = ["s", "c", "v", "d"];
+    while (!lista.includes(estado)) {
+        alert(" Insira a letra do seu estado!");
+        estado = prompt("Informe seu estado.");
+    }
+    alert("Condição validada");
 
     //SAÍDA
 
