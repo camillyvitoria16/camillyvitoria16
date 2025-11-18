@@ -6,11 +6,13 @@
     */
 
     //ENTRADA
-
-
+    let senha = prompt(`Faça uma senha de quatro números inteiros.`);
     //PROCESSAMENTO
-
-
+    while(isNaN(senha) || Number.isInteger(senha) || senha > 9999) {
+        alert(`Senha invalida!`);
+        senha = prompt(`Faça uma senha de quatro números inteiros.`);
+    }
     //SAÍDA
+    alert(`Senha correta`);
 
 </script>

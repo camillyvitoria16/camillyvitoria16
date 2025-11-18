@@ -6,15 +6,16 @@
     */
 
     //ENTRADA
-    nome = Number(prompt(`Informe o seu usúario!`)):
-    while(){
-
-    }
-
+    let nome = prompt(`Informe o seu usúario!`);
+    let senha = prompt(`Informe a sua senha.`);
 
     //PROCESSAMENTO
-
-
+    while(nome == senha) {
+        alert(`A senha é igual ao nome, Reinforme  seus dados!`);
+        nome = prompt(`Informe o seu usúario!`);
+        senha = Number(prompt(`Informe a sua senha.`));
+    }
+    
     //SAÍDA
-
+    alert(`Informações corretas!`);
 </script>

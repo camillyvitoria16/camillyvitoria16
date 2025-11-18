@@ -6,11 +6,15 @@
     */
 
     //ENTRADA
-
-
+let paisA = 80000;
+let paisB = 200000;
+let anos = 1;
     //PROCESSAMENTO
-
-
+    while(paisA <= paisB ) {
+    paisA *= 1.03;
+    paisB *= 1.015;
+    anos++;
+    }
     //SAÍDA
-
+    alert(`Demorou ${anos} anos para a população A, ultrapassar o pais B`);
 </script>
