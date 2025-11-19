@@ -13,48 +13,49 @@
     */
 
     //ENTRADA
-     let mediasSalarios = 0;
-     let somaSalarios = 0;
-     let quantidadePessoas = 0;
-     let maiorIdade = 0;
-     let menorIdade = 0;
-     let quantidadeMulheres = 0;
-     let idadeMenorSalario = 0;
-     let generoMenorSalario = 0;
-     let idade = 0;
+    let mediaSalarios = 0;
+    let somaSalarios = 0;
+    let quantidadePessoas = 0;
+    let maiorIdade = 0;
+    let menorIdade = 200;
+    let quantidadeMulheres = 0;
+    let menorSalario = 150000;
+    let idadeMenorSalario = 0;
+    let generoMenorSalario = 0;
+    let idade = 1;
 
     //PROCESSAMENTO
-    while(idade >= 0){
+    while (idade !== 0) {
         idade = Number(prompt(`Informe a idade da pessoa:`));
-        let genero = prompt(`Informe o genero o gênero: F|M`).toUpperCase();
-        let salario = Number(prompt(`Informe o salàrio:`));
-        somaSalarios = 
-        if (idade > maiorIdade){
-            maiorIdade = idade;
-        }
-        if (idade < manorIdade) {
-            menorIdade = idade;
-        }
-        if(salario < menorSalario){
-            idadeMenorSalario = idade;
-            generoMenorSalario = genero;
-            menorSalario = salario;
-
-        }
-        if (genero == "F") {
-            quantidadeMulheres = quantidadeMulheres + 1;
+        if (idade !==0) {
+            let genero = prompt(`Informe o gênero: F|M`).toUpperCase();
+            let salario = Number(prompt(`Informe o salário:`));
+            somaSalarios = somaSalarios + salario;
+            quantidadePessoas = quantidadePessoas + 1;
+            if (idade > maiorIdade) {
+                maiorIdade = idade;
+            }
+            if (idade < menorIdade) {
+                menorIdade = idade;
+            }
+            if (salario < menorSalario) {
+                idadeMenorSalario = idade;
+                generoMenorSalario = genero;
+                menorSalario = salario;
+            }
+            if (genero == "F") {
+                quantidadeMulheres = quantidadeMulheres + 1;
+            }
         }
     }
 
-    mediasSalarios = somaSalarios / quantidadePessoas;
-
+    mediaSalarios = somaSalarios / quantidadePessoas;
 
     //SAÍDA
-    document.write(``);
-    document.write(` `);
-    document.write(``);
-    document.write(``);
-    document.write(``);
-    
-
+    document.write(`A média de salaŕios do grupo é: R$ ${mediaSalarios.toFixed(2)}<br>`);
+    document.write(`A maior idade do grupo é ${maiorIdade} anos<br>`);
+    document.write(`A menor idade do grupo é ${menorIdade} anos<br>`);
+    document.write(`A quantidade de mulheres na região é ${quantidadeMulheres}<br>`);
+    document.write(`A idade da pessoa com o menor salário é ${idadeMenorSalario} anos<br>`);
+    document.write(`O gênero da pessoa com o menor salário é ${generoMenorSalario}`);
 </script>
