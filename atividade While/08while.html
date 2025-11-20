@@ -5,11 +5,15 @@
     */
     
     //ENTRADA
-
-
+let numero = Number(prompt(`Digite números sucessivamemte para somar eles, e se desejar parar, digite 0`));
+let final = 0;
+while (numero > 0) {
+final += numero;
+numero = Number(prompt(`Digite números sucessivamemte para somar eles, e se desejar parar, digite 0`));
+}
     //PROCESSAMENTO
 
 
     //SAÍDA
-    
+alert(`A soma de todos os números digitados por você é: ${final}`)
 </script>
