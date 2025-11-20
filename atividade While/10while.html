@@ -1,3 +1,4 @@
+<meta charset="UTF-8">
 <script>
     //Problema: Fibonacci
     /*
@@ -5,11 +6,16 @@
     */
 
     //ENTRADA
-
-
+let limite = Number(prompt(`Quantos números da sequência fibonacci deseja ver?`));
+const fibonacci = [1,1,2];
     //PROCESSAMENTO
-
+while (fibonacci.length < limite) {
+    let n1 = fibonacci[fibonacci.length-1];
+    let n2 = fibonacci[fibonacci.length-2];
+    let n3 = n1 + n2;
+    fibonacci.push(n3);
+}
 
     //SAÍDA
-    
+    alert(`A sequência Fibonacci final vai ser: ${fibonacci}`)
 </script>
