@@ -1,3 +1,4 @@
+<meta charset="UTF-8">
 <script>
     //Problema: Inversão de Número
     /*
@@ -8,11 +9,17 @@
     */
 
     //ENTRADA
-
-
+    let numero = prompt("Digite um número:");
+    let invertido = numero.split("");
+    let final = "";
+    let i = invertido.length -1;
     //PROCESSAMENTO
+    while (i >= 0) {
+        final += invertido[i];
+        i--;
+    }
 
-
+    alert(final);
     //SAÍDA
 
 </script>
